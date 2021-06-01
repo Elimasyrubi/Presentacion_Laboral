@@ -1,0 +1,79 @@
+@import '../../../general';
+
+.container{
+    text-align: start;
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+    border-bottom: 1px solid $dark;
+    .title{
+        font-weight: 900;
+        font-size: 2rem;
+        color: $dark;
+    }
+    .content{
+        margin-top: 1rem;
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+    form{
+        width: 45%;
+        .date{
+            display: flex;
+            flex-direction: column;
+            label{
+                margin-bottom: .5rem;
+                color: $dark;
+            }
+            input{
+                padding: .8rem;
+                border: 1px solid $dark;
+                border-radius: 10px;
+            }
+        }
+        .spesificTime, .dateRange{
+            .radio{
+                margin: 1.5rem 0 .5rem 0;
+                input{
+                    
+                }
+                label{
+                    margin-left: .5rem;
+                }
+            }
+            .time, .select{
+                width: 100%;
+                padding: .8rem;
+                border: 1px solid $dark;
+                border-radius: 10px;
+            }
+        }
+       
+    }
+    .message{
+        width: 45%;
+        padding: .5rem;
+        border: 1px solid $dark;
+        border-radius: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+        .enterADate{
+        }
+        .BadDate{
+            color: red;
+
+        }
+        .goodDate{
+            span{
+                margin: 0 .5rem;
+                font-weight: bold;
+            }
+
+        }
+   
+    }
+
+}
